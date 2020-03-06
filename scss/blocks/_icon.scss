@@ -1,4 +1,23 @@
 .icon {
   display: inline-block;
   background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.icon-required {
+  width: 0.6rem;
+  height: 1.8rem;
+  background-image: url('../assets/required.svg');
+}
+
+.icon-clear {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image: url('../assets/clear.svg');
+}
+
+.icon-settings {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url('../assets/settings.svg');
 }

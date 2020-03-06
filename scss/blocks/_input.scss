@@ -1,0 +1,39 @@
+.input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 4px;
+  border: 2px solid var(--grey-4);
+  padding: 0 1.3rem;
+  height: 3.6rem;
+  color: var(--primary-text-color);
+
+  &_width {
+    &_short {
+      width: 5.2rem;
+    }
+  }
+
+  &_state {
+    &_disabled {
+      .input__box {
+        color: var(--grey-5);
+      }
+      pointer-events: none;
+      .input__addon-after {
+        display: none;
+      }
+    }
+  }
+
+  &__box {
+    width: 100%;
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+
+  &__label {
+    margin-bottom: 0.6rem;;
+  }
+}

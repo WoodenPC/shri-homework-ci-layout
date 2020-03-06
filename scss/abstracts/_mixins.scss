@@ -1,31 +1,11 @@
-// внутренние отступы по горизонтали
-@mixin padding-horizontal($left, $right: $left) {
-  padding-left: $left;
-  padding-right: $right;
-}
-
-// внутренние отступы по вертикали
-@mixin padding-vertical($top, $bottom: $top) {
-  padding-top: $top;
-  padding-bottom: $bottom;
-}
-
-// внешние отступы по горизонтали
-@mixin margin-horizontal($left, $right: $left) {
-  margin-left: $left;
-  margin-right: $right;
-}
-
-// внешние отступы по вертикали
-@mixin margin-vertical($top, $bottom: $top) {
-  margin-top: $top;
-  margin-bottom: $bottom;
-}
-
 @mixin centered() {
   margin: 0 auto;
-  max-width: calc(#{$screen-desktop} - 2 * 100px);
-  @media (max-width: $screen-mobile) {
-    max-width: calc(#{$screen-mobile} - 2 * 16px);
+  max-width: 100%;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  @media (min-width: $screen-mobile) {
+    max-width: calc(#{$screen-mobile} - 2 * 10rem);
+    padding-left: 0;
+    padding-right: 0;
   }
 }

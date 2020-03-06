@@ -2,8 +2,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
 
   &__container {
+    width: 100%;
     flex: 1 0 auto;
     background-color: var(--default-color);
     @include centered;

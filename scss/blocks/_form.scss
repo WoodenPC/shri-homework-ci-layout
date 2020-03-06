@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  @media (max-width: $screen-mobile) {
+    width: 100%;
+  }
+
+  &__header {
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+    color: var(--primary-text-color);
+  }
+
+  &__description {
+    color: var(--grey-7);
+    line-height: 1.8rem;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 0;
+    
+    &_required {
+      label::after {
+        content: '*';
+        color: red;
+      }
+    }
+
+    &_direction {
+      &_col {
+        flex-direction: column;
+        & > *:not(:first-child) {
+          margin-top: 0.6rem;
+        }
+      }
+      &_row {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+
+        & > *:not(:first-child) {
+          margin-left: 0.8rem;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+
+    & > *:not(:first-child) {
+      margin-left: 0.8rem;
+    }
+
+    @media (max-width: $screen-mobile) {
+      flex-direction: column;
+      justify-content: stretch;
+
+      & > *:not(:first-child) {
+        margin-left: 0;
+        margin-top: 1.2rem;
+      }
+    }
+  }
+}
