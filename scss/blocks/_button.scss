@@ -1,11 +1,12 @@
 .button {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
   font-size: var(--font-size-s);
   height: 2.8rem;
-  background-color: var(--grey-3);
+  background-color: var(--grey-4);
   border-radius: 4px;
   border: none;
   cursor: var(--cursor-pointer), pointer;
@@ -13,13 +14,28 @@
   outline: none;
   text-decoration: none;
 
+  &:hover {
+    background-color: #DBDBDB;
+  }
+
+  &:focus {
+    background-color: var(--grey-4);
+    border: 2px solid var(--grey-7);
+  }
+
+  &:disabled {
+    background-color: var(--grey-2);
+    color: var(--disabled-text-color);
+  }
+
   &__icon {
-    padding-left: var(--space-s);
+    width: 2.5rem;
     display: flex;
     justify-content: center;
-    width: 2.5rem;
+
     @media (max-width: $screen-mobile) {
-      padding-left: 0;
+      padding: var(--space-s);
+      width: 2.8rem;
     }
   }
 
@@ -31,7 +47,6 @@
     }
 
     &_icon {
-
       .button__text {
         margin-right: var(--space-xl);
       }
@@ -47,12 +62,29 @@
   &_style {
     &_flat {
       background: none;
+
+      &:hover {
+        background: none;
+      }
+
+      &:focus {
+        border: none;
+        background: none;
+      }
     }
   }
 
   &_color {
     &_accent {
       background-color: var(--accent-color);
+      &:hover {
+        background-color: #F2C200;
+      }
+    
+      &:focus {
+        background-color: var(--accent-color);
+        border: 2px solid #B38F00;
+      }
     }
   }
 }

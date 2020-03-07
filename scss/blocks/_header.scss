@@ -8,9 +8,21 @@
   @include centered;
 
   &__title {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-xxl);
     font-weight: 500;
     letter-spacing: 0.25px;
-    color: var(--grey-7);
+    color: var(--grey-8);
+
+    &_black {
+      color: var(--primary-text-color);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    & > *:not(:first-child) {
+      margin-left: var(--space-s);
+    }
   }
 }

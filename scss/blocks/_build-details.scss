@@ -1,0 +1,12 @@
+.build-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-xxxl);
+  &__log {
+    overflow-x: scroll;
+    margin-top: var(--space-xxxl);
+    border-radius: 6px;
+    padding: var(--space-s) var(--space-l);
+    background-color: var(--grey-2);
+  }
+}

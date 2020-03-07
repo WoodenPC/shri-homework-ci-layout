@@ -15,6 +15,8 @@
 @import 'blocks/icon';
 @import 'blocks/form';
 @import 'blocks/commit';
+@import 'blocks/list';
+@import 'blocks/build-details';
 
 *,
 *::before,
@@ -27,6 +29,7 @@
 html {
   font-size: 62.5%;
   font-family: 'YS Text', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 30rem;
 }
 
 html, body {
