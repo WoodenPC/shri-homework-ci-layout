@@ -2,8 +2,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-m);
 
   &__container {
     width: 100%;

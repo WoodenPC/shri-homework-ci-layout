@@ -8,26 +8,26 @@
   }
 
   &__header {
-    margin-top: 0.8rem;
-    margin-bottom: 0.4rem;
+    margin-top: var(--space-s);
+    margin-bottom: var(--space-xxs);
   }
 
   &__title {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-l);
     font-weight: bold;
     color: var(--primary-text-color);
   }
 
   &__description {
     color: var(--grey-7);
-    line-height: 1.8rem;
+    line-height: var(--line-height-m);
   }
 
   &__field {
     display: flex;
     flex-direction: column;
-    padding: 0.8rem 0;
+    padding: var(--space-s) 0;
     
     &_required {
       label::after {
@@ -40,7 +40,7 @@
       &_col {
         flex-direction: column;
         & > *:not(:first-child) {
-          margin-top: 0.6rem;
+          margin-top: var(--space-xs);
         }
       }
       &_row {
@@ -49,7 +49,7 @@
         flex-direction: row;
 
         & > *:not(:first-child) {
-          margin-left: 0.8rem;
+          margin-left: var(--space-s);
         }
       }
     }
@@ -60,7 +60,7 @@
     flex-direction: row;
 
     & > *:not(:first-child) {
-      margin-left: 0.8rem;
+      margin-left: var(--space-s);
     }
 
     @media (max-width: $screen-mobile) {
@@ -69,7 +69,7 @@
 
       & > *:not(:first-child) {
         margin-left: 0;
-        margin-top: 1.2rem;
+        margin-top: var(--space-l);
       }
     }
   }

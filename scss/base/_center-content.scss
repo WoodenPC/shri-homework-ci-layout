@@ -1,6 +1,6 @@
 .center-content {
-  font-size: 1.3rem;
-  line-height: 125%;
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
   font-style: normal;
   font-weight: normal;
   color: var(--primary-text-color);
@@ -18,12 +18,12 @@
   }
 
   p {
-    margin-top: 3.2rem;
-    margin-bottom: 2.4rem;
+    margin-top: var(--space-xxxxxl);
+    margin-bottom: var(--space-xxxxl);
     text-align: center;
     width: 26.4rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    font-size: 1.3rem;
+    padding-left: 3rem; //  Костыль, чтобы совпадало с макетом
+    padding-right: 3rem; // Костыль, чтобы совпадало с макетом
+    font-size: var(--font-size-s);
   }
 }

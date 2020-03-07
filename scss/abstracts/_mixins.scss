@@ -1,8 +1,8 @@
 @mixin centered() {
   margin: 0 auto;
   max-width: 100%;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
+  padding-left: var(--space-xxl);
+  padding-right: var(--space-xxl);
   @media (min-width: $screen-mobile) {
     max-width: calc(#{$screen-mobile} - 2 * 10rem);
     padding-left: 0;

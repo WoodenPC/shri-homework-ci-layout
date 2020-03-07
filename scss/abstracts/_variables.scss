@@ -14,10 +14,31 @@
   --grey-7: #7F8285;
 
   --control-color: #E6E6E6;
-  //---------------
   --primary-text-color: #000000;
   --ghost-text-color: rgba(0, 0, 0, 0.65);
-
+  // ----------------
+  --font-size-s: 1.3rem;
+  --font-size-m: 1.5rem;
+  --font-size-l: 1.8rem;
+  --font-size-xl: 2.4rem;
+  // ----------------
+  --line-height-s: 1.6rem;
+  --line-height-m: 1.8rem;
+  --line-height-l: 2rem;
+  --line-height-xl: 2.8rem;
+  --line-height-xxl: 3rem;
+  --line-height-xxxl: 3.6rem;
+  // ----------------
+  --space-xxs: 0.4rem;
+  --space-xs: 0.6rem;
+  --space-s: 0.8rem;
+  --space-m: 1rem;
+  --space-l: 1.2rem;
+  --space-xl: 1.3rem;
+  --space-xxl: 1.6rem;
+  --space-xxxl: 2rem;
+  --space-xxxxl: 2.4rem;
+  --space-xxxxxl: 3.2rem;
   // ----------------
   --cursor-pointer: url('../assets/cursor-pointer.svg');
 }

@@ -3,12 +3,12 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
   @include centered;
 
   &__title {
-    font-size: 2.4rem;
+    font-size: var(--font-size-xl);
     font-weight: 500;
     letter-spacing: 0.25px;
     color: var(--grey-7);
