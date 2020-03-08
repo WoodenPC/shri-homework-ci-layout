@@ -4,13 +4,13 @@
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  padding: var(--space-l) var(--space-xxxxl);
+  padding: var(--space-l) var(--space-xxxxxl);
 
   @media (max-width: $screen-mobile) {
-    padding: var(--space-l) var(--space-xxl);
+    padding: var(--space-l) var(--space-xxxl);
   }
 
-  padding: var(--space-l) var(--space-xxxl);
+  padding: var(--space-l) var(--space-xxxxl);
   border-radius: 6px;
   box-shadow: 0px 1px 1px rgba(67, 68, 69, 0.3),
     0px 0px 1px rgba(67, 68, 69, 0.3);

@@ -41,11 +41,10 @@
     }
   }
 
-
   &_type {
     &_default {
       .button__text {
-        margin: auto var(--space-xxxl);
+        margin: auto var(--space-xxxxl);
       }
     }
 
@@ -68,10 +67,11 @@
 
       &:hover {
         background: none;
+        box-shadow: none;
       }
 
       &:focus {
-        border: none;
+        box-shadow: none;
         background: none;
       }
     }

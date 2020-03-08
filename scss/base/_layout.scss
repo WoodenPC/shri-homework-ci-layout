@@ -10,10 +10,10 @@
     flex: 1 0 auto;
     background-color: var(--default-color);
     @include centered;
-    margin-bottom: var(--space-xxxl);
+    margin-bottom: var(--space-xxxxl);
 
     @media (max-width: $screen-mobile) {
-      margin-bottom: var(--space-xxl);
+      margin-bottom: var(--space-xxxl);
     }
   }
 }

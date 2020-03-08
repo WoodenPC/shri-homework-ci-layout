@@ -38,12 +38,14 @@
   --space-m: 1rem;
   --space-l: 1.2rem;
   --space-xl: 1.3rem;
-  --space-xxl: 1.6rem;
-  --space-xxxl: 2rem;
-  --space-xxxxl: 2.4rem;
-  --space-xxxxxl: 3.2rem;
+  --space-xxl: 1.4rem;
+  --space-xxxl: 1.6rem;
+  --space-xxxxl: 2rem;
+  --space-xxxxxl: 2.4rem;
+  --space-xxxxxxl: 3.2rem;
   // ----------------
   --cursor-pointer: url('../assets/cursor-pointer.svg');
 }
 
-$screen-mobile: 1024px;
+$screen-mobile: 640px;
+$max-content-width: 1024px;

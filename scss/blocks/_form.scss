@@ -9,7 +9,11 @@
 
   &__header {
     margin-top: var(--space-s);
-    margin-bottom: var(--space-xxs);
+    margin-bottom: var(--space-xxl);
+
+    @media (max-width: $screen-mobile) {
+      margin-bottom: var(--space-xs);
+    }
   }
 
   &__title {
@@ -17,6 +21,7 @@
     line-height: var(--line-height-l);
     font-weight: bold;
     color: var(--primary-text-color);
+    margin-bottom: var(--space-s);
   }
 
   &__description {
@@ -27,8 +32,8 @@
   &__field {
     display: flex;
     flex-direction: column;
-    padding: var(--space-s) 0;
-    
+    margin: var(--space-s) 0;
+
     &_required {
       label::after {
         content: '*';

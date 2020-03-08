@@ -18,18 +18,18 @@
       </div>
       <div class="form__field form__field_required form__field_direction_col">
         <label for="field-repo">GitHub repository</label>
-        <div class="input input_state_disabled">
-          <input name="field-repo" id="field-repo" value="user-name/repo-name" class="input__box" required></input>
-          <button class="input__addon-after button button_type_icon button_style_flat">
-            <span class="button__icon icon icon-clear"><span>
+        <div class="input">
+          <input name="field-repo" id="field-repo" placeholder="user-name/repo-name" class="input__box" required />
+          <button type="reset" class="input__addon-after button button_type_icon button_style_flat">
+            <span class="button__icon icon icon-clear"></span>
           </button>
         </div>
       </div>
       <div class="form__field form__field_direction_col">
         <label for="field-command">Build command</label>
         <div class="input">
-          <input name="field-command" id="field-command" value="npm ci && npm run build" class="input__box" required></input>
-          <button class="input__addon-after button button_type_icon button_style_flat">
+          <input name="field-command" id="field-command" value="npm ci && npm run build" class="input__box" required />
+          <button type="reset" class="input__addon-after button button_type_icon button_style_flat">
             <span class="button__icon icon icon-clear"></span>
           </button>
         </div>
@@ -37,8 +37,8 @@
       <div class="form__field form__field_direction_col">
         <label for="field-branch">Main branch</label>
         <div class="input">
-          <input name="field-branch" id="field-branch" value="master |" class="input__box" required></input>
-          <button class="input__addon-after button button_type_icon button_style_flat">
+          <input name="field-branch" id="field-branch" value="master |" class="input__box" required />
+          <button type="reset" class="input__addon-after button button_type_icon button_style_flat">
             <span class="button__icon icon icon-clear"></span>
           </button>
         </div>
@@ -51,12 +51,12 @@
         <span>minutes</span>
       </div>
       <div class="form__footer">
-        <a class="button button_type_default button_color_accent" tabindex="1">
+        <button type="submit" class="button button_type_default button_color_accent" tabindex="1">
           <span class="button__text">Save</span>
-        </a>
-        <a class="button button_type_default" tabindex="1">
+        </button>
+        <button type="button" class="button button_type_default" tabindex="1">
           <span class="button__text">Cancel</span>
-        </a>
+        </button>
       </div>
     </form>
   </main>
@@ -70,7 +70,7 @@
           <span class="button__text">Learning</span>
         </a>
       </div>
-      <span>&copy; 2020 Your Name</span>
+      <span class="footer__author">&copy; 2020 Your Name</span>
     </div>
   </footer>
 </body>

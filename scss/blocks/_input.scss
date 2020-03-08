@@ -31,6 +31,12 @@
     text-decoration: none;
     outline: none;
     border: none;
+
+    &:placeholder-shown {
+      &+.input__addon-after {
+        display: none;
+      }
+    }
   }
 
   &__label {
