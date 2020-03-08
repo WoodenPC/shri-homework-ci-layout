@@ -4,7 +4,6 @@
   flex-direction: row;
   align-items: center;
   font-size: var(--font-size-s);
-  height: 2.8rem;
   background-color: var(--grey-4);
   border-radius: 4px;
   border: none;
@@ -29,15 +28,25 @@
     color: var(--disabled-text-color);
   }
 
-
   &__icon {
-    width: 2.5rem;
+    width: 2.8rem;
     display: flex;
     justify-content: center;
 
     @media (max-width: $screen-mobile) {
       padding: var(--space-s);
-      width: 2.8rem;
+    }
+  }
+
+  &__text {
+    line-height: var(--line-height-xl);
+  }
+
+  &_text-size {
+    &_big {
+      .button__text {
+        line-height: var(--line-height-xxxl);
+      }
     }
   }
 
@@ -50,6 +59,7 @@
 
     &_icon {
       .button__text {
+        margin-left: calc(var(--space-xxxs) * -1);
         margin-right: var(--space-xl);
       }
 

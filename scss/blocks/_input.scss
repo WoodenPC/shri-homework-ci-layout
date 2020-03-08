@@ -7,9 +7,17 @@
   padding: 0 var(--space-xl);
   height: 3.6rem;
   color: var(--primary-text-color);
+  line-height: var(--line-height-xs);
+
+  &:focus-within {
+    border: 2px solid var(--grey-7);
+  }
 
   &_width {
     &_short {
+      .input__box {
+        text-align: end;
+      }
       width: 5.2rem;
     }
   }

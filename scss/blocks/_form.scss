@@ -1,9 +1,10 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  max-width: 47.4rem;
 
   @media (max-width: $screen-mobile) {
+    max-width: none;
     width: 100%;
   }
 
@@ -32,12 +33,14 @@
   &__field {
     display: flex;
     flex-direction: column;
-    margin: var(--space-s) 0;
+    margin-top: var(--space-s);
+    margin-bottom: var(--space-m);
 
     &_required {
       label::after {
         content: '*';
         color: red;
+        margin-left: var(--space-xxxxs);
       }
     }
 
@@ -63,7 +66,7 @@
   &__footer {
     display: flex;
     flex-direction: row;
-
+    margin-top: var(--space-m);
     & > *:not(:first-child) {
       margin-left: var(--space-s);
     }

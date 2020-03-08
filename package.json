@@ -4,7 +4,8 @@
   "description": "ШРИ домашняя работа №1 верстка CI системы",
   "main": "webpack.config.js",
   "scripts": {
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "compile": "gulp compile-scss"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/WoodenPC/shri-homework-ci-layout/issues"
   },
+  "browserslist": ["last 10 versions"],
   "homepage": "https://github.com/WoodenPC/shri-homework-ci-layout#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
