@@ -758,6 +758,9 @@
     border-radius: 6px;
     padding: var(--space-s) var(--space-l);
     background-color: var(--grey-2); }
+    @media (max-width: 640px) {
+      .build-details__log {
+        margin-top: var(--space-xxxl); } }
 
 *,
 *::before,
