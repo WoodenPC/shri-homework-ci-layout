@@ -16,7 +16,9 @@
   "bugs": {
     "url": "https://github.com/WoodenPC/shri-homework-ci-layout/issues"
   },
-  "browserslist": ["last 10 versions"],
+  "browserslist": [
+    "last 10 versions"
+  ],
   "homepage": "https://github.com/WoodenPC/shri-homework-ci-layout#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.4",

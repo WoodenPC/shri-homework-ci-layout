@@ -158,7 +158,8 @@
   cursor: var(--cursor-pointer), pointer;
   vertical-align: middle;
   outline: none;
-  text-decoration: none; }
+  text-decoration: none;
+  color: var(--primary-text-color); }
   .button:hover {
     background-color: #DBDBDB; }
   .button:focus {
@@ -753,7 +754,7 @@
   flex-direction: column; }
   .build-details__log {
     overflow-x: scroll;
-    margin-top: var(--space-xxxxl);
+    margin-top: var(--space-l);
     border-radius: 6px;
     padding: var(--space-s) var(--space-l);
     background-color: var(--grey-2); }
